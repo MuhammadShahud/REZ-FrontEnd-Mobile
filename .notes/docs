@@ -1,0 +1,7 @@
+Debug Keystore facebook hash
+keytool -exportcert  -keystore "E:\Nasir\Rez\Rez\android\app\my-upload-key.keystore" | "E:\Nasir\OpenSSL\bin\openssl.exe" sha1 -binary | "E:\Nasir\OpenSSL\bin\openssl.exe" base64
+      
+keytool -keystore "E:\Nasir\Rez\Rez\android\app\my-upload-key.keystore" -list -v
+
+
+keytool -exportcert -alias androiddebugkey -keystore "debug.keystore" | "E:\Nasir\OpenSSL\bin\openssl.exe" sha1 -binary | "E:\Nasir\OpenSSL\bin\openssl.exe" base64
